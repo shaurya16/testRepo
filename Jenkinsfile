@@ -8,7 +8,7 @@ pipeline {
                     echo "Multiline shell steps works too"
                     ls -lah
                 '''
-                sh 'Testing the sh command'
+                sh 'echo "TEST_VAR=\"Hello World\"  $TEST_VAR! Testing the sh command"'
             }
         }
     }
